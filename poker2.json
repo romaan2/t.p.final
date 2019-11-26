@@ -1,0 +1,34 @@
+[
+  {
+    "torneo": "WSOP",
+    "ciudad": "New York",
+    "nombre": "Daniel Negreanu",
+    "edad": 45,
+    "apodo": "kid poker",
+    "brazaletes": 6
+    
+},
+{
+  "torneo": "WSOP",
+  "ciudad": "New York",
+  "nombre": "Doyle Brunson",
+  "edad": 86,
+  "apodo": "Texas Dolly",
+  "brazaletes": 10
+},
+{
+  "torneo": "WSOP",
+  "ciudad": "New York",
+  "nombre": "Phill Hellmuth",
+  "edad": 55,
+  "apodo": "The Brat Brat",
+  "brazaletes": 15
+},
+{ "torneo": "WSOP",
+  "ciudad": "New York",
+  "nombre": "Erik Seidel",
+  "edad": 59,
+  "apodo": "sly",
+  "brazaletes": 8
+}
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="esp">
+    
+              
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salon de la fama</title>
+
+</head>
+  
+<body background="diamonds-pattern-background-gold.jpg">
+    
+        <h1 style="font-size: 20px;text-decoration:underline; font-size:40px"> <center> Salon de la fama del Poker </center> </h1> 
+        <h2>Torneo: WSOP</h2>
+        <h3>Ciudad:New York</h3>
+       
+        <div class="lista" id="data">
+        
+        </div>
+    </div>
+           
+    <script>
+        var content = document.querySelector("#data");
+
+        function bringData(){
+            fetch("poker2.json")
+            .then (res => res.json())
+            .then (datos => {
+                lista(datos);
+            });
+        }
+
+        function lista(datos){
+            content.innerHTML = "";
+            for (let valor of datos) {
+            content.innerHTML += `
+            
+            <ul>  
+               <li style="color:red;font-size: 30px;" > Nombre : ${valor.nombre} </li>
+               <li style="font-size: 20px;text-decoration:bold"> Edad : ${valor.edad} </li>
+               <li style=""> Apodo : ${valor.apodo} </li>
+               <li style=""> Brazaletes : ${valor.brazaletes} </li>
+            </ul>
+            `;
+            }
+            }
+            bringData();
+    </script>
+
+</body>
+</html>
