@@ -7,17 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="poker3.css">
+    
     <title>Salon de la fama</title>
 
 </head>
+
   
-<body background="diamonds-pattern-background-gold.jpg">
+<body 
+
+
+background="diamonds-pattern-background-gold.jpg">
     
         <h1 style="font-size: 20px;text-decoration:underline; font-size:40px"> <center> Salon de la fama del Poker </center> </h1> 
         <h2>Torneo: WSOP</h2>
         <h3>Ciudad:New York</h3>
        
-        <div class="lista" id="data">
+        <div  class="lista" id="data">
+
+              
         
         </div>
     </div>
@@ -39,10 +47,11 @@
             content.innerHTML += `
             
             <ul>  
-               <li style="color:red;font-size: 30px;" > Nombre : ${valor.nombre} </li>
-               <li style="font-size: 20px;text-decoration:bold"> Edad : ${valor.edad} </li>
-               <li style=""> Apodo : ${valor.apodo} </li>
-               <li style=""> Brazaletes : ${valor.brazaletes} </li>
+                     <li style="color:red;font-size: 30px;" > Nombre : ${valor.nombre} </li>
+                     <li><img src ="${valor.urlimagen}"></li>
+                     <li style="font-size: 20px;text-decoration:bold"> Edad : ${valor.edad} </li>
+                    <li style=""> Apodo : ${valor.apodo} </li>
+                     <li style=""> Brazaletes : ${valor.brazaletes} </li>
             </ul>
             `;
             }

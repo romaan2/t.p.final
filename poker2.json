@@ -5,7 +5,8 @@
     "nombre": "Daniel Negreanu",
     "edad": 45,
     "apodo": "kid poker",
-    "brazaletes": 6
+    "brazaletes": 6,
+    "urlimagen": "negreanu.jpg"
     
 },
 {
@@ -14,7 +15,8 @@
   "nombre": "Doyle Brunson",
   "edad": 86,
   "apodo": "Texas Dolly",
-  "brazaletes": 10
+  "brazaletes": 10,
+  "urlimagen":"brunson.jpg"
 },
 {
   "torneo": "WSOP",
@@ -22,13 +24,15 @@
   "nombre": "Phill Hellmuth",
   "edad": 55,
   "apodo": "The Brat Brat",
-  "brazaletes": 15
+  "brazaletes": 15,
+  "urlimagen":"hellmuth.jpg"
 },
 { "torneo": "WSOP",
   "ciudad": "New York",
   "nombre": "Erik Seidel",
   "edad": 59,
   "apodo": "sly",
-  "brazaletes": 8
+  "brazaletes": 8,
+  "urlimagen":"seidel.jpg"
 }
 ]

@@ -4,6 +4,7 @@ var section = document.querySelector('section');
 var URL = "poker2.json"
 
 
+
 var solicitud = new XMLHttpRequest();
 solicitud.open('GET', "poker2.json");
 solicitud.responseType = 'json';
@@ -28,12 +29,17 @@ function mostrarinformacion (jsonObj) {
 for (var i = 0 ; i < infoJugadores.length; i++) {
     var h2nombre = document.createElement('h2');
     var h2apodo = document.createElement('p');
+    var imagen = document.createElement ("img");
+
 
 h2nombre.textContent = jsonObjJugadores[i].nombre;
 h2apodo.textContent = jsonObjJugadores[i].apodo;
+imagen.src = jsonObjJugadores[i].urlimagen;
 
 cabecera.appendChild(h2nombre);
-cabecera.appendChild(h2apodo)
+cabecera.appendChild(h2apodo);
+cabecera.appendChild(imagen)
+
 }
 }
 
